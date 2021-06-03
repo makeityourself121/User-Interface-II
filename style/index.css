@@ -72,7 +72,7 @@ section{
 nav{
     margin-left:7%;
 }
-a{
+.links a{
     width:10%;
     text-decoration: none;
     letter-spacing: 3px;
@@ -80,8 +80,8 @@ a{
     border:1px solid grey;
     text-align: center;
 }
-a:hover{
-    background-color: aqua;
+.links a:hover{
+    background-color:rgb(178, 200, 209);
 }
 .links{
     display:flex;
@@ -106,14 +106,21 @@ a:hover{
 }
 .right a{
     width:20%;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color:#4f4f4f;
+    border:1px solid grey;
+    text-align: center;
 }
+
 .photos div{
     width:25%;
     margin-bottom:10px;
 }
 .photos{
-    flex-flow:row wrap;
     display:flex;
+    flex-flow:row wrap;
+    
     justify-content: space-between;
     text-align: center;
     margin-top:15px;
@@ -127,4 +134,13 @@ a:hover{
 .foot h2{
     display: flex;
     justify-content: center;
+}
+.foot a{
+    width:20%;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color:#4f4f4f;
+    border:1px solid grey;
+    text-align: center;
+    height:auto;
 }
