@@ -43,7 +43,7 @@ table {
     padding:0;
     max-width:100%;
     /* border:1px solid grey; */
-}
+} 
 html{
     font-size:62.5%;
 }
@@ -79,6 +79,7 @@ nav{
     color:#4f4f4f;
     border:1px solid grey;
     text-align: center;
+    padding: 10px;
 }
 .links a:hover{
     background-color:rgb(178, 200, 209);
@@ -111,8 +112,8 @@ nav{
     color:#4f4f4f;
     border:1px solid grey;
     text-align: center;
+    padding: 10px;
 }
-
 .photos div{
     width:25%;
     margin-bottom:10px;
@@ -120,7 +121,6 @@ nav{
 .photos{
     display:flex;
     flex-flow:row wrap;
-    
     justify-content: space-between;
     text-align: center;
     margin-top:15px;
@@ -143,4 +143,131 @@ nav{
     border:1px solid grey;
     text-align: center;
     height:auto;
+}
+.foot a{
+    margin-bottom:20px;
+     padding:10px;
+ }
+.social img{
+    width:2%;
+    margin-top:20px;
+}
+@media(max-width: 800px){
+    /*if the screen size is 800px or smaller apply these styles*/
+    nav h1{
+        text-align: center;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .links{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .links a{
+        width: 30%;
+        padding:10px;
+    }
+    .main{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main img{
+        margin-top: 30px;
+    }
+    .main, .right{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin:auto;
+        width:80%;
+    }
+    .right h2 {
+        text-align: center;
+        justify-content: center;
+    }
+    .right a{
+        width:30%;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
+    }
+    .photos div{
+        width:50%;
+    }
+    .foot h2{
+        margin-bottom: 15px;;
+    }
+    .foot a{
+       margin-bottom:20px;
+        padding:10px;
+    }
+    .social img{
+        width:5%;
+        margin-top:20px;
+    }
+}
+
+
+@media(max-width: 500px){
+    /* main{
+        margin:auto;
+    } */
+    nav{
+        flex-direction: column;
+        
+    }
+    .links{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .links a{
+        width:45%;
+        padding:10px;
+    }
+    .main{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main img{
+        margin-top: 30px;
+    }
+    .main, .right{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin:auto;
+        width:100%;
+    }
+    .right h2 {
+        text-align: center;
+        justify-content: center;
+    }
+    .right a{
+        width:40%;
+        justify-content: center;
+        align-items: center;
+        padding:10px;
+    }
+    .photos div{
+        width:50%;
+        
+    }
+    .foot h2{
+        margin-bottom: 15px;;
+    }
+    .foot a{
+       margin-bottom:20px;
+        padding:10px;
+    }
+    .social img{
+        width:5%;
+        margin-top:20px;
+    }
 }
